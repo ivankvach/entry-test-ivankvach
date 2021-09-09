@@ -6,7 +6,7 @@
  */
 
 export const pick = (obj, ...fields) => {
-    const result = {};
+    const result = new Object();
     fields.forEach(item => {
         result[item] = obj[item];
     });
